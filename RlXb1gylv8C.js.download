@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["lBhJu"]); }
+
+__d("DialogHideOnSuccess",["csx","CSS"],(function(a,b,c,d,e,f,g){a=function(){"use strict";function a(a){this._layer=a}var c=a.prototype;c.enable=function(){this._subscription=this._layer.subscribe("success",this._handle.bind(this))};c.disable=function(){this._subscription.unsubscribe(),this._subscription=null};c._handle=function(a,c){b("CSS").matchesSelector(c.getTarget(),"._s")&&this._layer.hide()};return a}();Object.assign(a.prototype,{_subscription:null});e.exports=a}),null);
+__d("UsernameFormatToken",[],(function(a,b,c,d,e,f){e.exports=Object.freeze({FIRST:"{first}",MIDDLE:"{middle}",LAST:"{last}"})}),null);
